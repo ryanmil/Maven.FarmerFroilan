@@ -1,14 +1,12 @@
 package com.zipcodewilmington.froilansfarm.animal;
 
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.Rideable;
 import com.zipcodewilmington.froilansfarm.food.Eater;
 
 public abstract class Animal implements Eater, NoiseMaker {
-    public void mount(){
 
-    }
+    public abstract void mount(Rideable rideable);
 
-    public void dismount() {
-
-    }
+    public abstract void dismount();
 }
