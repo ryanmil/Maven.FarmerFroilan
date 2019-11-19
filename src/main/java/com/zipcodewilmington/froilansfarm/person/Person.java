@@ -1,11 +1,7 @@
 package com.zipcodewilmington.froilansfarm.person;
 
-public abstract class Person {
-    public String makeNoise(String speak) {
-        return null;
-    }
+public abstract class Person implements Eater, NoiseMaker {
 
-    public void eat() {
+    String name;
 
-    }
 }
