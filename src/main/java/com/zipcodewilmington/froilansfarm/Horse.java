@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-import com.zipcodewilmington.froilansfarm.Animal.Animal;
+import com.zipcodewilmington.froilansfarm.animal.Animal;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public class Horse extends Animal implements Rideable {
@@ -12,11 +12,12 @@ public class Horse extends Animal implements Rideable {
 
     }
 
-    public void mount(){
+    public void mount(Rider rider) {
 
     }
 
     public void dismount(){
 
     }
+
 }
