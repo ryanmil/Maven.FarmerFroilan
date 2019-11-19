@@ -8,8 +8,6 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
     public String makeNoise(String speak) {
         return null;
     }
+    String name;
 
-    public void eat() {
-
-    }
 }
