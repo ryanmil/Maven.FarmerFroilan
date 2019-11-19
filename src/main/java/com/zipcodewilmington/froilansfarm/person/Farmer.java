@@ -1,4 +1,5 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.person;
+import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public class Farmer extends Person {
 
@@ -12,7 +13,6 @@ public class Farmer extends Person {
 
 
     public void Eat(Edible food) {
-
 
 
     }
