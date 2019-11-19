@@ -4,11 +4,5 @@ import com.zipcodewilmington.froilansfarm.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.food.Eater;
 
 public abstract class Animal implements Eater, NoiseMaker {
-    public void mount(){
 
-    }
-
-    public void dismount() {
-
-    }
 }
