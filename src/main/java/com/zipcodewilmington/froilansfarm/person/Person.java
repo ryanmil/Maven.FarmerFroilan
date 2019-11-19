@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.person;
 
 public abstract class Person {
     public String makeNoise(String speak) {
