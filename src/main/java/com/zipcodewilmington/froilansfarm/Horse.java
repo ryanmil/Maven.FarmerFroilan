@@ -8,11 +8,16 @@ public class Horse extends Animal implements Rideable {
 
     }
 
-    public void makeNoise() {
+    public String makeNoise() {
 
+        return null;
     }
 
     public void mount(Rider rider) {
+
+    }
+
+    public void mount(Rideable rideable) {
 
     }
 
