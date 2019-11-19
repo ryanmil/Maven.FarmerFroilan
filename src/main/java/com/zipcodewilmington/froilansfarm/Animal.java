@@ -1,11 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
 public abstract class Animal implements Eater, NoiseMaker {
-    public void mount(){
 
-    }
+    public abstract void mount(Rideable rideable);
 
-    public void dismount() {
-
-    }
+    public abstract void dismount();
 }
