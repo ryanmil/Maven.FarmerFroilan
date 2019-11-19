@@ -8,7 +8,7 @@ public class Farmer extends Person {
         super();
         this.name = name;
     }
-    
+
     public void Eat(Edible food) {
 
 
