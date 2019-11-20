@@ -13,6 +13,11 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
     public Person(List<Edible> foodEat) {
         this.foodEat = foodEat;
     }
+
+    public Person() {
+
+    }
+
     public void eat(Edible edible){
         foodEat.add(edible);
 
