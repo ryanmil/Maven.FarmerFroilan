@@ -2,16 +2,14 @@ package com.zipcodewilmington.froilansfarm.person;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public class Farmer extends Person {
-
     String name;
-
 
     public Farmer(String name){
 
         super();
-        this.name =name;
-    }
+        this.name = name;
 
+    }
 
     public void Eat(Edible food) {
 
