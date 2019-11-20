@@ -1,6 +1,9 @@
 package com.zipcodewilmington.froilansfarm.person;
 
-public interface Botanist {
+import com.zipcodewilmington.froilansfarm.CropRow;
+import com.zipcodewilmington.froilansfarm.plants.Crop;
 
-    void fertilize();
+public interface Botanist {
+    void plant(Crop crop, CropRow row);
+    void fertilize(Crop crop);
 }
