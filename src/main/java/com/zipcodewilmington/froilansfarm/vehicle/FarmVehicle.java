@@ -2,9 +2,10 @@ package com.zipcodewilmington.froilansfarm.vehicle;
 
 import com.zipcodewilmington.froilansfarm.Rideable;
 
-public class FarmVehicle extends Vehicle implements Rideable {
+public abstract class FarmVehicle extends Vehicle implements Rideable {
 
-    public void makeNoise() {
+    public String makeNoise() {
 
+        return null;
     }
 }
