@@ -12,10 +12,6 @@ public class Farmer extends Person {
         this.name = name;
     }
 
-    public void Eat(Edible food) {
-
-    }
-
     public String makeNoise() {
 
         return "ahhhhhhhh!";
@@ -30,17 +26,9 @@ public class Farmer extends Person {
         this.name = name;
     }
 
-    public int getFoodEaten(){
-        return foodEaten;
-    }
 
     public void plant(Crop crop, CropRow row){
 
-    }
-
-    public void fertilize(Crop crop){
-
-        crop.setHasBeenFertilized(true);
     }
 
 }

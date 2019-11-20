@@ -7,9 +7,8 @@ public abstract class Crop implements Producer {
 
     private boolean hasBeenFertilized;
     private boolean hasBeenHarvested;
-    int count = 0;
 
-    public void Crop(){
+    public Crop(){
 
         this.hasBeenFertilized = false;
         this.hasBeenHarvested = false;

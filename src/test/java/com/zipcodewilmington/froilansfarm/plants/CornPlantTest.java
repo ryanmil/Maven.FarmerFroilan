@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 public class CornPlantTest {
 
     CornPlant cornPlant;
+    Farmer froilan;
 
     @Test
     public void constructorTest(){
@@ -27,6 +28,18 @@ public class CornPlantTest {
         cornPlant.setHasBeenFertilized(true);
 
         Assert.assertTrue(cornPlant.hasBeenFertilized());
+    }
+
+    @Test
+    public void yieldTest(){
+
+        froilan = new Farmer("Froilan");
+        cornPlant = new CornPlant();
+
+        cornPlant.setHasBeenFertilized(true);
+        froilan.eat(cornPlant.yield());
+
+        Assert.assertEquals(1, froilan.getFoodEaten());
     }
 
 }

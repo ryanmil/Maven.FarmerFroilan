@@ -1,8 +1,11 @@
 package com.zipcodewilmington.froilansfarm.plants;
 
+import com.zipcodewilmington.froilansfarm.food.Edible;
+import com.zipcodewilmington.froilansfarm.food.Tomato;
 import com.zipcodewilmington.froilansfarm.person.Farmer;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 import static org.junit.Assert.*;
 
@@ -25,10 +28,23 @@ public class TomatoPlantTest {
 
         tomatoPlant = new TomatoPlant();
 
-        tomatoPlant.setHasBeenHarvested(true);
+        tomatoPlant.setHasBeenFertilized(true);
+        tomatoPlant.yield();
 
         Assert.assertTrue(tomatoPlant.hasBeenHarvested());
 
+    }
+
+    @Test
+    public void yieldTest(){
+
+        froilan = new Farmer("Froilan");
+        tomatoPlant = new TomatoPlant();
+
+        tomatoPlant.setHasBeenFertilized(true);
+        froilan.eat(tomatoPlant.yield());
+
+        Assert.assertEquals(1, froilan.getFoodEaten());
     }
 
 
