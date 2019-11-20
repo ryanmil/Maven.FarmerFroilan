@@ -8,18 +8,12 @@ import com.zipcodewilmington.froilansfarm.food.Edible;
 import java.util.List;
 
 public abstract class Person  implements NoiseMaker, Eater, Rider {
-    List<Edible> foodEat;
-
-    public Person(List<Edible> foodEat) {
-        this.foodEat = foodEat;
-    }
 
     public Person() {
-
     }
 
+
     public void eat(Edible edible){
-        foodEat.add(edible);
 
     }
 
