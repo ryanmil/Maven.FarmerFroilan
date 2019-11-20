@@ -1,13 +1,19 @@
 package com.zipcodewilmington.froilansfarm.food;
 
-import com.zipcodewilmington.froilansfarm.plants.Crop;
-
 public class Tomato implements Edible {
+    int tomato = 1;
+
     public boolean wasEaten() {
-        return false;
+
+        if(tomato == 1)
+            return false;
+
+      return true;
     }
 
     public void makeEaten() {
 
+        tomato = 0;
     }
+
 }
