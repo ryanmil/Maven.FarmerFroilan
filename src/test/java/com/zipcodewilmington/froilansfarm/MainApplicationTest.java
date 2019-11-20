@@ -14,6 +14,11 @@ public class MainApplicationTest {
        Farmer froilan = new Farmer();
        Farmer froilanda = new Farmer();
        Corn corn = new Corn();
+       Broccoli broccoli = new Broccoli();
+       Egg egg = new Egg();
+       Tomato tomato = new Tomato();
+       CropDuster cropDuster = new CropDuster();
+
 
     }
     @Test

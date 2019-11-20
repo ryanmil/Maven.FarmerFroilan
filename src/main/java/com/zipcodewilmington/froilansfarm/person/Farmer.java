@@ -8,7 +8,8 @@ public class Farmer extends Person {
 
     public Farmer(String name){
 
-        this.name = name;
+        super();
+        this.name =name;
     }
 
 
