@@ -6,6 +6,7 @@ import org.junit.Test;
 /**
  * Created by leon on 2/26/18.
  */
+
 public class MainApplicationTest {
    /* @Before
     public void setup() {
@@ -16,7 +17,10 @@ public class MainApplicationTest {
        Corn corn = new Corn();
 
     }
+    */
     @Test
-*/
+    public void testTest() {
+        
+    }
 }
 
