@@ -10,8 +10,10 @@ public abstract class Animal implements Eater, NoiseMaker {
 
     public abstract void dismount();
 
+
     public Integer amountOfFoodEaten(){
         return null;
     }
+
 
 }
