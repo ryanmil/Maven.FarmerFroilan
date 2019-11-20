@@ -9,6 +9,7 @@ import java.util.List;
 
 public abstract class Person  implements NoiseMaker, Eater, Rider {
 
+    String name;
     int foodEaten;
 
     public Person() {
@@ -22,9 +23,13 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
         }
     }
 
+    public int getFoodEaten(){
+        return foodEaten;
+    }
+
     public String makeNoise(String speak) {
         return "Hey! there ";
     }
-    String name;
+
 
 }

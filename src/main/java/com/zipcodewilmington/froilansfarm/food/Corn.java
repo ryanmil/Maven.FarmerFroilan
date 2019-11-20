@@ -17,4 +17,6 @@ public class Corn implements Edible {
 
         corn = 0;
     }
+
+
 }
