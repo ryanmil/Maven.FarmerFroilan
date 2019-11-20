@@ -1,9 +1,9 @@
-package com.zipcodewilmington.froilansfarm.animal;
+package com.zipcodewilmington.froilansfarm.Animal;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnimalHouse<T extends Animal> {
+public class AnimalHouse<T> {
 
     private List<T> animals;
 
