@@ -1,7 +1,12 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.food.Edible;
+
 public interface Producer {
 
-    Crop yield();
+
+    Edible yield();
+    boolean hasBeenFertilized();
+    boolean hasBeenHarvested();
 
 }
