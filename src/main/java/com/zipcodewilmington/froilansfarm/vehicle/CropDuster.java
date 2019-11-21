@@ -1,7 +1,5 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
-import com.zipcodewilmington.froilansfarm.Farm;
-import com.zipcodewilmington.froilansfarm.Rider;
-import com.zipcodewilmington.froilansfarm.plants.Crop;
+import com.zipcodewilmington.froilansfarm.Field;
 
 public class CropDuster extends FarmVehicle implements Aircraft {
 
@@ -11,18 +9,21 @@ public class CropDuster extends FarmVehicle implements Aircraft {
     }
 
     @Override
-    public void fly (Crop crop, Rider rider){
-       // if(rider.isPilot)
-        crop.hasBeenFertilized();
-    }
-
-    @Override
-    void operate(Farm farm) {
-        //fly();
+    boolean operate(Field field) {
+      if (isFlying()) {
+          //fertalize that field
+          return true;
+      }
+        return false;
     }
 
     @Override
     public boolean isMounted() {
         return false;
+    }
+
+    @Override
+    public boolean isFlying() {
+        return true;
     }
 }
