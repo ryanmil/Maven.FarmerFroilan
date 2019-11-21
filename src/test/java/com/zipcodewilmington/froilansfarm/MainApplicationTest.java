@@ -12,6 +12,7 @@ import com.zipcodewilmington.froilansfarm.vehicle.CropDuster;
 import com.zipcodewilmington.froilansfarm.animal.AnimalHouse;
 import com.zipcodewilmington.froilansfarm.vehicle.FarmVehicle;
 import com.zipcodewilmington.froilansfarm.vehicle.Tractor;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -53,7 +54,7 @@ public class MainApplicationTest {
     public void setup() {
 
 
-        for (int i = 0; i <= 2; i++){
+        for (int d = 0; d <= 2; d++){
             chickenCoop0.add(new Chicken());
             chickenCoop1.add(new Chicken());
             chickenCoop2.add(new Chicken());
@@ -66,7 +67,7 @@ public class MainApplicationTest {
 
 
 
-        for (int i = 0; i < 2; i++){
+        for (int s = 0; s < 2; s++){
             stable0.add(new Horse());
             stable1.add(new Horse());
             stable2.add(new Horse());
@@ -103,12 +104,45 @@ waiting for the plants to be functional
     }
 
     @Test
-    public void SundayTest() {
+    public void SundayRideTest() {
         //Every morning, Froilan and Froilanda begin their morning by
-
+/*
         //Riding each Horse in each Stable
+        for (int i = 0; i < stable0.size(); i++) {
+            froilan.mount(stable0.get(i)).ride(stable0.get(i).dismount());
+            froilanda.mount(stable1.get(i)).ride(stable1.get(i).dismount());
+            froilan.mount(stable2.get(i)).ride(stable2.get(i).dismount());
 
+        }
+        //Checking if horse was ridden
+        for (int i = 0; i < stable0.size(); i++) {
+            Assert.assertEquals(stable0.get(i).wasRidden == true);
+            Assert.assertEquals(stable1.get(i).wasRidden == true);
+            Assert.assertEquals(stable2.get(i).wasRidden == true);
+
+        }
+*/
+    }
+    @Test
+    public void SundayEatTest() {
+/*
+        //Feeding each Horse in each Stable
+        for (int i = 0; i < stable1.size(); i++) {
+            stable0.get(i).eat(new Corn());
+            stable1.get(i).eat(new Corn());
+            stable2.get(i).eat(new Corn());
+
+
+        }
+        for (int i = 0; i < stable0.size(); i++) {
+            Assert.assertEquals(stable0.get(i). == true);
+            Assert.assertEquals(stable1.get(i).wasRidden == true);
+            Assert.assertEquals(stable2.get(i).wasRidden == true);
+
+        }
 
     }
+*/
+}
 }
 
