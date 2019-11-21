@@ -14,5 +14,4 @@ public class Field {
     public void makeRow() {
         rows.add(new CropRow());
     }
-
 }
