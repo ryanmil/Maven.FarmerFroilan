@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.person;
 
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.Rideable;
 import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.food.Eater;
 import com.zipcodewilmington.froilansfarm.food.Edible;
@@ -11,9 +12,12 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
 
     String name;
     int foodEaten;
+    private boolean currentlyRidingSomething = false;
+    private Rideable thingBeingRidden;
 
     public Person() {
     }
+
 
     public void eat(Edible edible){
 
@@ -22,6 +26,7 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
             foodEaten++;
         }
     }
+
 
     public int getFoodEaten(){
         return foodEaten;
@@ -32,4 +37,26 @@ public abstract class Person  implements NoiseMaker, Eater, Rider {
     }
 
 
+    public boolean isCurrentlyRidingSomething() {
+        return currentlyRidingSomething;
+    }
+
+    public void mount(Rideable thingToMount) {
+        if (!currentlyRidingSomething) {
+            thingBeingRidden = thingToMount;
+            currentlyRidingSomething = true;
+        }
+    }
+
+    public void dismount(Rideable thingDismount) {
+        if (currentlyRidingSomething) {
+          //  thingBeingRidden.dismount();
+            thingBeingRidden = null;
+            currentlyRidingSomething = false;
+        }
+    }
+
+
 }
+
+
