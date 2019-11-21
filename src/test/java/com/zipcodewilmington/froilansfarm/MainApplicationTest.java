@@ -107,7 +107,7 @@ waiting for the plants to be functional
         //Every morning, Froilan and Froilanda begin their morning by
 
         //Riding each Horse in each Stable
-    
+
 
     }
 }
