@@ -4,12 +4,10 @@ import com.zipcodewilmington.froilansfarm.food.Corn;
 import com.zipcodewilmington.froilansfarm.food.Egg;
 import com.zipcodewilmington.froilansfarm.food.Tomato;
 import com.zipcodewilmington.froilansfarm.person.Farmer;
-import com.zipcodewilmington.froilansfarm.person.Person;
 import com.zipcodewilmington.froilansfarm.plants.CornPlant;
-import com.zipcodewilmington.froilansfarm.plants.Crop;
 import com.zipcodewilmington.froilansfarm.plants.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.vehicle.CropDuster;
-import com.zipcodewilmington.froilansfarm.animal.AnimalHouse;
+import com.zipcodewilmington.froilansfarm.Animal.AnimalHouse;
 import com.zipcodewilmington.froilansfarm.vehicle.FarmVehicle;
 import com.zipcodewilmington.froilansfarm.vehicle.Tractor;
 import org.junit.Assert;
@@ -22,7 +20,7 @@ import org.junit.Test;
 
 public class MainApplicationTest {
     //Instantiation
-    // Farm farm = new Farm();
+    // com.zipcodewilmington.froilansfarm.Farm farm = new com.zipcodewilmington.froilansfarm.Farm();
     Field field = new Field();
     CropRow cornRow = new CropRow();
     CropRow tomatoRow = new CropRow();
