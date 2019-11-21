@@ -1,11 +1,9 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
 
 import com.zipcodewilmington.froilansfarm.CropRow;
-import com.zipcodewilmington.froilansfarm.Farm;
-import com.zipcodewilmington.froilansfarm.Rider;
-import com.zipcodewilmington.froilansfarm.plants.CornPlant;
-import com.zipcodewilmington.froilansfarm.plants.Crop;
-import com.zipcodewilmington.froilansfarm.plants.TomatoPlant;
+
+import com.zipcodewilmington.froilansfarm.Field;
+
 
 import java.util.ArrayList;
 
@@ -14,19 +12,17 @@ public class Tractor extends FarmVehicle{
     CropRow cropRow = new CropRow();
 
     @Override
-    void operate(Farm farm) {
-
+     public boolean operate(Field field) {
+        if (isMounted()){
+            //do the planting
+            return true;
+        }
+        return false;
     }
 
     @Override
     public String makeNoise() {
         return "I'm a tractor!";
-    }
-
-    public void plantCrop (Crop crop){
-
-        cropRow.addCrop(crop);
-
     }
 
     @Override
