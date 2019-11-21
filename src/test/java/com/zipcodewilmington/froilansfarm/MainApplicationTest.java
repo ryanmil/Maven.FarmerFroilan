@@ -21,7 +21,7 @@ import org.junit.Test;
 
 public class MainApplicationTest {
     //Instantiation
-    // Farm farm = new Farm();
+    // com.zipcodewilmington.froilansfarm.Farm farm = new com.zipcodewilmington.froilansfarm.Farm();
     Field field = new Field();
     CropRow cornRow = new CropRow();
     CropRow tomatoRow = new CropRow();
