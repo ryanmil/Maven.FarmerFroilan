@@ -11,7 +11,7 @@ public class CropRow<T extends Crop> {
 
 
     public CropRow() {
-        crops = new ArrayList<T>();
+        crops = new ArrayList<>();
     }
 
     public void addCrop (T newCrop) {

@@ -1,18 +1,20 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.zipcodewilmington.froilansfarm.Animal.Animal;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public class Horse extends Animal implements Rideable{
     Rider rider;
-    Rideable rideable;
+    Boolean isMoving = false;
+    Integer foodEaten = 0;
 
     public String makeNoise() {
         return "Neighhh!";
     }
 
     public void mount(Rider rider) {
-        this.rideable.mount(rider);
+        this.rider = rider;
     }
 
     public void dismount(){
@@ -20,7 +22,22 @@ public class Horse extends Animal implements Rideable{
     }
 
     public void eat(Edible food) {
-        food.makeEaten();
+        if(!food.wasEaten()) {
+            food.makeEaten();
+            foodEaten++;
+        }
+    }
+
+    public void gallop (){
+        this.isMoving = true;
+    }
+
+    public Boolean isMoving() {
+        return isMoving;
+    }
+
+    public Rider getRider() {
+        return rider;
     }
 
 }
