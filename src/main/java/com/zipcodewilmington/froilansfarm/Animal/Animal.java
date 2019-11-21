@@ -6,7 +6,9 @@ import com.zipcodewilmington.froilansfarm.food.Eater;
 
 public abstract class Animal implements Eater, NoiseMaker {
 
-    public abstract void mount(Rideable rideable);
+    public Integer amountOfFoodEaten(){
+        return null;
+    }
 
-    public abstract void dismount();
+
 }
