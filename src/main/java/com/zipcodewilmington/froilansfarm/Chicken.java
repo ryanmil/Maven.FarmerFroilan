@@ -1,22 +1,33 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Animal.Animal;
 import com.zipcodewilmington.froilansfarm.food.Edible;
+import com.zipcodewilmington.froilansfarm.food.Egg;
 
-public class Chicken implements Producer {
+public class Chicken extends Animal implements Producer {
+    Egg egg;
 
-    @Override
     public Edible yield() {
+        if (hasBeenFertilized()){
+            return this.egg;
+        }
         return null;
     }
 
-    @Override
     public boolean hasBeenFertilized() {
+
         return false;
     }
 
-    @Override
     public boolean hasBeenHarvested() {
         return false;
     }
 
+    public String makeNoise() {
+        return "cluck cluck!";
+    }
+
+    public void eat(Edible food) {
+        food.makeEaten();
+    }
 }
