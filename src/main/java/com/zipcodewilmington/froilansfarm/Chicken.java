@@ -1,11 +1,33 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Chicken implements Producer {
-    public void yield() {
+import com.zipcodewilmington.froilansfarm.Animal.Animal;
+import com.zipcodewilmington.froilansfarm.food.Edible;
+import com.zipcodewilmington.froilansfarm.food.Egg;
 
+public class Chicken extends Animal implements Producer {
+    Egg egg;
+
+    public Edible yield() {
+        if (hasBeenFertilized()){
+            return this.egg;
+        }
+        return null;
     }
 
-    public Boolean hasBeenFertilized(){
-        return null;
+    public boolean hasBeenFertilized() {
+
+        return false;
+    }
+
+    public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    public String makeNoise() {
+        return "cluck cluck!";
+    }
+
+    public void eat(Edible food) {
+        food.makeEaten();
     }
 }

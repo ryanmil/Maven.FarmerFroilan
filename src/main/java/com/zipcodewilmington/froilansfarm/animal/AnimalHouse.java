@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.Animal;
+package com.zipcodewilmington.froilansfarm.animal;
 
 import java.util.ArrayList;
 import java.util.List;

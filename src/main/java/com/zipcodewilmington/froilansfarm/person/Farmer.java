@@ -1,16 +1,16 @@
 package com.zipcodewilmington.froilansfarm.person;
+import com.zipcodewilmington.froilansfarm.CropRow;
 import com.zipcodewilmington.froilansfarm.food.Edible;
+import com.zipcodewilmington.froilansfarm.plants.Crop;
 
 public class Farmer extends Person {
     String name;
 
+
     public Farmer(String name){
+
         super();
         this.name = name;
-    }
-
-    public void Eat(Edible food) {
-
 
     }
 
@@ -27,4 +27,10 @@ public class Farmer extends Person {
     public void setName(String name) {
         this.name = name;
     }
+
+
+    public void plant(Crop crop, CropRow row){
+
+    }
+
 }

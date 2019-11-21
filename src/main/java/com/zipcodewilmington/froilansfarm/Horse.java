@@ -4,25 +4,23 @@ import com.zipcodewilmington.froilansfarm.Animal.Animal;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public class Horse extends Animal implements Rideable{
-    public void Eat(Edible food) {
-
-    }
+    Rider rider;
+    Rideable rideable;
 
     public String makeNoise() {
-
-        return null;
+        return "Neighhh!";
     }
 
     public void mount(Rider rider) {
-
-    }
-
-    public void mount(Rideable rideable) {
-
+        this.rideable.mount(rider);
     }
 
     public void dismount(){
+        this.rider = null;
+    }
 
+    public void eat(Edible food) {
+        food.makeEaten();
     }
 
 }
