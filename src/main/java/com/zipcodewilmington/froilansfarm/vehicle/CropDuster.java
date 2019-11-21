@@ -11,11 +11,6 @@ public class CropDuster extends FarmVehicle implements Aircraft {
     }
 
     @Override
-    public void mount(Rider rider) {
-        this.rider = rider;
-    }
-
-    @Override
     public void fly (Crop crop, Rider rider){
        // if(rider.isPilot)
         crop.hasBeenFertilized();
@@ -24,5 +19,10 @@ public class CropDuster extends FarmVehicle implements Aircraft {
     @Override
     void operate(Farm farm) {
         //fly();
+    }
+
+    @Override
+    public boolean isMounted() {
+        return false;
     }
 }

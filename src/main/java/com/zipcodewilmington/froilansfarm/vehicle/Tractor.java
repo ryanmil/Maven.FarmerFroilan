@@ -23,14 +23,14 @@ public class Tractor extends FarmVehicle{
         return "I'm a tractor!";
     }
 
-    @Override
-    public void mount(Rider rider) {
-      // if rider implements farmer
-        this.rider = rider;
-    }
     public void plantCrop (Crop crop){
 
         cropRow.addCrop(crop);
 
+    }
+
+    @Override
+    public boolean isMounted() {
+        return false;
     }
 }
