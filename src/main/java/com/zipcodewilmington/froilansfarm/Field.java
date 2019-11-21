@@ -10,7 +10,7 @@ public class Field {
     public Field() {
         rows = new ArrayList<>();
     }
-    
+
     public void makeRow() {
         rows.add(new CropRow());
     }
