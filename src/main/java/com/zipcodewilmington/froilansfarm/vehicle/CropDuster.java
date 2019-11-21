@@ -7,13 +7,5 @@ public class CropDuster extends FarmVehicle implements Aircraft {
 
     }
 
-    @Override
-    public void mount(Rider rider) {
 
-    }
-
-    @Override
-    public void dismount() {
-
-    }
 }
