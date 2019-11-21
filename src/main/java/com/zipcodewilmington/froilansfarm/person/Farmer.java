@@ -1,10 +1,11 @@
 package com.zipcodewilmington.froilansfarm.person;
 import com.zipcodewilmington.froilansfarm.CropRow;
+import com.zipcodewilmington.froilansfarm.Rideable;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 import com.zipcodewilmington.froilansfarm.plants.Crop;
 
 public class Farmer extends Person {
-    String name;
+    private String name;
 
 
     public Farmer(String name){
@@ -30,4 +31,8 @@ public class Farmer extends Person {
 
     }
 
+    @Override
+    public void unmount(Rideable rideable) {
+
+    }
 }
