@@ -6,6 +6,7 @@ import com.zipcodewilmington.froilansfarm.food.Egg;
 
 public class Chicken extends Animal implements Producer {
     Egg egg;
+    Integer foodEaten = 0;
 
     public Edible yield() {
         if (hasBeenFertilized()){
@@ -28,6 +29,10 @@ public class Chicken extends Animal implements Producer {
     }
 
     public void eat(Edible food) {
-        food.makeEaten();
+        foodEaten++;
+    }
+
+    public Integer amountOfFoodEaten(){
+        return foodEaten;
     }
 }
