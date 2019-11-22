@@ -21,10 +21,11 @@ public class Horse extends Animal implements Rideable{
     }
 
     public void eat(Edible food) {
-        if(!food.wasEaten()) {
-            food.makeEaten();
-            foodEaten++;
-        }
+        foodEaten++;
+    }
+
+    public Integer amountOfFoodEaten(){
+        return foodEaten;
     }
 
     public void gallop (){
