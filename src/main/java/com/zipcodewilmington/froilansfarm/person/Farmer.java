@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm.person;
-import com.zipcodewilmington.froilansfarm.CropRow;
-import com.zipcodewilmington.froilansfarm.Rideable;
-import com.zipcodewilmington.froilansfarm.food.Edible;
+import com.zipcodewilmington.froilansfarm.plants.CropRow;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.plants.Crop;
 
 public class Farmer extends Person {

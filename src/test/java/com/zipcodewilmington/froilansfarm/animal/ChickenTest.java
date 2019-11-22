@@ -1,6 +1,5 @@
 package com.zipcodewilmington.froilansfarm.animal;
 
-import com.zipcodewilmington.froilansfarm.Chicken;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 import com.zipcodewilmington.froilansfarm.food.Egg;
 import org.junit.Assert;

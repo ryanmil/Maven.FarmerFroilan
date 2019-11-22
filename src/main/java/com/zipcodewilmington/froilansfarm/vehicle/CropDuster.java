@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
-import com.zipcodewilmington.froilansfarm.Field;
+import com.zipcodewilmington.froilansfarm.plants.Field;
 
 public class CropDuster extends FarmVehicle implements Aircraft {
 

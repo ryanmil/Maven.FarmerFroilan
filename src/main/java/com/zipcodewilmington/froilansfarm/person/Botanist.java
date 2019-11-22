@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.person;
 
-import com.zipcodewilmington.froilansfarm.CropRow;
+import com.zipcodewilmington.froilansfarm.plants.CropRow;
 import com.zipcodewilmington.froilansfarm.plants.Crop;
 
 public interface Botanist {

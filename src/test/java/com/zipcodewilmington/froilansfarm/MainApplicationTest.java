@@ -1,16 +1,19 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.animal.Chicken;
+import com.zipcodewilmington.froilansfarm.animal.Horse;
 import com.zipcodewilmington.froilansfarm.food.Corn;
 import com.zipcodewilmington.froilansfarm.food.Egg;
 import com.zipcodewilmington.froilansfarm.food.Tomato;
 import com.zipcodewilmington.froilansfarm.person.Farmer;
 import com.zipcodewilmington.froilansfarm.plants.CornPlant;
+import com.zipcodewilmington.froilansfarm.plants.CropRow;
+import com.zipcodewilmington.froilansfarm.plants.Field;
 import com.zipcodewilmington.froilansfarm.plants.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.vehicle.CropDuster;
 import com.zipcodewilmington.froilansfarm.Animal.AnimalHouse;
 import com.zipcodewilmington.froilansfarm.vehicle.FarmVehicle;
 import com.zipcodewilmington.froilansfarm.vehicle.Tractor;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,7 +23,7 @@ import org.junit.Test;
 
 public class MainApplicationTest {
     //Instantiation
-    // com.zipcodewilmington.froilansfarm.Farm farm = new com.zipcodewilmington.froilansfarm.Farm();
+    // com.zipcodewilmington.froilansfarm.farm.Farm farm = new com.zipcodewilmington.froilansfarm.farm.Farm();
     Field field = new Field();
     CropRow cornRow = new CropRow();
     CropRow tomatoRow = new CropRow();
