@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
-import com.zipcodewilmington.froilansfarm.Farm;
-import com.zipcodewilmington.froilansfarm.Field;
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.farm.Farm;
+import com.zipcodewilmington.froilansfarm.plants.Field;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rider;
 
 public abstract class FarmVehicle extends Vehicle {
     Farm farm;

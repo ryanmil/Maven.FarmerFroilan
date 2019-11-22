@@ -1,12 +1,10 @@
 package com.zipcodewilmington.froilansfarm.person;
 
-import com.zipcodewilmington.froilansfarm.NoiseMaker;
-import com.zipcodewilmington.froilansfarm.Rideable;
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rider;
 import com.zipcodewilmington.froilansfarm.food.Eater;
 import com.zipcodewilmington.froilansfarm.food.Edible;
-
-import java.util.List;
 
 public abstract class Person  implements NoiseMaker, Eater, Rider {
 

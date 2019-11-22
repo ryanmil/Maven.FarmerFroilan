@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
 
-import com.zipcodewilmington.froilansfarm.NoiseMaker;
-import com.zipcodewilmington.froilansfarm.Rideable;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
 
 public abstract class Vehicle implements NoiseMaker, Rideable {
     String name;
