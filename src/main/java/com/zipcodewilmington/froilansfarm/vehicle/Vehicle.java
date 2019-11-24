@@ -4,9 +4,11 @@ import com.zipcodewilmington.froilansfarm.miscinterfaces.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
 
 public abstract class Vehicle implements NoiseMaker, Rideable {
-    String name;
-    String color;
-    Integer speed = 0;
-    String noise;
-    Boolean isBeingUsed = false;
+    Boolean isMounted;
+    public Vehicle(Boolean isMounted){
+        this.isMounted = isMounted;
+    }
+    public boolean isMounted(){
+        return isMounted;
+    }
 }

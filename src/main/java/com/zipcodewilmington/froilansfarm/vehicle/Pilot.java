@@ -1,9 +1,10 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
 
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.plants.CropRow;
 import com.zipcodewilmington.froilansfarm.person.Person;
 
-public class Pilot  {
+public class Pilot extends Person {
     Person thePilot;
 
     public Pilot(Person thePilot) {
@@ -29,4 +30,13 @@ public class Pilot  {
 
     }
 
+    @Override
+    public String makeNoise() {
+        return null;
+    }
+
+    @Override
+    public void unmount(Rideable rideable) {
+
+    }
 }

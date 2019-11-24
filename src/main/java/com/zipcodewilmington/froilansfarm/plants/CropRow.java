@@ -22,4 +22,7 @@ public class CropRow<T extends Crop> {
         return crops.get(index);
     }
 
+    public Integer getNumOfCrops(){
+        return crops.size();
+    }
 }

@@ -14,4 +14,11 @@ public class Field {
     public void makeRow() {
         rows.add(new CropRow());
     }
+
+    public CropRow getRow(Integer rowNum) {
+        return rows.get(rowNum);
+    }
+    public Integer getNumOfRows(){
+        return rows.size();
+    }
 }

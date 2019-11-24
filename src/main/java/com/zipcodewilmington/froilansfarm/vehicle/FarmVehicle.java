@@ -7,5 +7,18 @@ public abstract class FarmVehicle extends Vehicle {
     Farm farm;
     Rider rider;
 
-   abstract boolean operate(Field field);
+    public FarmVehicle(Boolean isMounted, Rider rider) {
+        super(isMounted);
+        this.rider = rider;
+    }
+
+    abstract boolean operate(Field field);
+
+    public Rider getRider() {
+        return rider;
+    }
+
+    public void setRider(Rider rider) {
+        this.rider = rider;
+    }
 }
