@@ -13,7 +13,7 @@ public class Pilot  {
     }
 
     public void fly (Aircraft aircraft){
-            isFlying();
+            //isFlying();
 
     }
 
@@ -23,7 +23,7 @@ public class Pilot  {
 
     public void pilotAircraft(CropRow row, Aircraft aircraft) {
 
-        aircraft.fly(row, this);
+       // aircraft.fly(row, this);
 
 
     }
