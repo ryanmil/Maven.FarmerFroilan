@@ -1,8 +1,6 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
 
-import com.zipcodewilmington.froilansfarm.CropRow;
-import com.zipcodewilmington.froilansfarm.Rideable;
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.plants.CropRow;
 import com.zipcodewilmington.froilansfarm.person.Person;
 
 public class Pilot  {
@@ -13,7 +11,9 @@ public class Pilot  {
     }
 
     public void fly (Aircraft aircraft){
-            //isFlying();
+
+            aircraft.isFlying();
+
 
     }
 
@@ -21,10 +21,12 @@ public class Pilot  {
 
     }
 
+
     public void pilotAircraft(CropRow row, Aircraft aircraft) {
 
        // aircraft.fly(row, this);
 
 
     }
+
 }

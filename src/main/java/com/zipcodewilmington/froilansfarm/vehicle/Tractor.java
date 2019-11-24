@@ -1,14 +1,9 @@
 package com.zipcodewilmington.froilansfarm.vehicle;
 
-import com.zipcodewilmington.froilansfarm.CropRow;
-
-import com.zipcodewilmington.froilansfarm.Field;
-import com.zipcodewilmington.froilansfarm.plants.CornPlant;
+import com.zipcodewilmington.froilansfarm.plants.CropRow;
 import com.zipcodewilmington.froilansfarm.plants.Crop;
-import com.zipcodewilmington.froilansfarm.plants.TomatoPlant;
+import com.zipcodewilmington.froilansfarm.plants.Field;
 
-
-import java.util.ArrayList;
 
 public class Tractor extends FarmVehicle{
 

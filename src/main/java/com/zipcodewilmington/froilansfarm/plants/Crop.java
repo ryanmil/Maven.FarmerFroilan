@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.plants;
 
-import com.zipcodewilmington.froilansfarm.Producer;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Producer;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
 public abstract class Crop implements Producer {

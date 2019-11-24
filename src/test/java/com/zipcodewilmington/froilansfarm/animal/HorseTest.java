@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm.animal;
 
-import com.zipcodewilmington.froilansfarm.Horse;
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rider;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 import org.junit.Assert;
 import org.junit.Before;

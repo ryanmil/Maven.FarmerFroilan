@@ -1,9 +1,11 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.animal;
 
 import com.zipcodewilmington.froilansfarm.Animal.Animal;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rideable;
+import com.zipcodewilmington.froilansfarm.miscinterfaces.Rider;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 
-public class Horse extends Animal implements Rideable{
+public class Horse extends Animal implements Rideable {
     Rider rider;
     Boolean isMoving = false;
     Integer foodEaten = 0;
